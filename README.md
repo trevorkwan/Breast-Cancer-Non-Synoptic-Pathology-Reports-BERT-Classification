@@ -11,7 +11,7 @@ Step 1: Extract the relevant span of text from the entire report. (Question Answ
 Step 2: Classify the extracted span of text into a class. (Text Classification)  
 
 #### Data Loading, Cleaning, and Exploratory Data Analysis (EDA)
-We [load and clean](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/load_and_clean_data.py) synoptic and non-synoptic report data, removing irrelevant text/labels and accounting for missing data. We do [EDA](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/EDA.py) on the cleaned data to look for data imbalance and abnormalities. Data cleaning and EDA were an iterative process as we redefine project goals with healthcare stakeholders.
+We [load and clean](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/load_and_clean_data.py) synoptic and non-synoptic report data, removing irrelevant text/labels and accounting for missing data. We do [EDA](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/EDA.py) on the cleaned data to look for data imbalance and abnormalities. Data cleaning and EDA is an iterative process as we redefine project goals with healthcare stakeholders.
 
 #### Question Answering (QA) Training
 - Choosing the QA pretrained model to use.
