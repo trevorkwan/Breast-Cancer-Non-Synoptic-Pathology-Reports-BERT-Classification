@@ -22,7 +22,7 @@ We [evaluate](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology
 #### Text Classification Training and Evaluation
 
 #### Other Classification Methods
-Other classification methods with varying performances were explored for thoroughness in the project, including [simple regex](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/regex_classification.ipynb), [weighted keywords](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/weighted_keyword_analysis.ipynb), and [naive bayes](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/naive_bayes_classifier.ipynb).
+We explore other classification methods with varying performances for project thoroughness, including [simple regex](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/regex_classification.ipynb), [weighted keywords](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/weighted_keyword_analysis.ipynb), and [naive bayes](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/naive_bayes_classifier.ipynb).
 
 #### Exploratory Methods for QA Optimization
-Methods explored to optimize QA model performance included [downsampling](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/get_sub_11_and_downsampled.ipynb), removing metadata, and adding synoptic data.
+We explore methods to optimize QA model performance, including [downsampling](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/get_sub_11_and_downsampled.ipynb), removing metadata, and adding synoptic data.
