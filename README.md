@@ -11,15 +11,13 @@ Step 1: Extract the relevant span of text from the entire report. (Question Answ
 Step 2: Classify the extracted span of text into a class. (Text Classification)  
 
 #### Data Loading, Cleaning, and Exploratory Data Analysis (EDA)
-We [load and clean](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/load_and_clean_data.py) synoptic and non-synoptic report data, removing irrelevant text/labels and accounting for missing data. We do [EDA](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/EDA.py) on the cleaned data to look for data imbalance and abnormalities. Data cleaning and EDA are an iterative process as we redefine project goals with healthcare stakeholders.
+We [load and clean](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/load_and_clean_data.py) synoptic and non-synoptic report data, removing irrelevant text/labels and accounting for "No Mention" data. We do [EDA](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/EDA.py) on the cleaned data to look for data imbalance and abnormalities. Data cleaning and EDA are an iterative process as we redefine project goals with healthcare stakeholders.
 
 #### Question Answering (QA) Training
-We fine-tune two pre-trained clinical models on squadv2: [pubmed_bert_squadv2](https://huggingface.co/franklu/pubmed_bert_squadv2) and [bluebert_pubmed_mimic_squadv2](https://huggingface.co/trevorkwan/bluebert_pubmed_mimic_uncased_squadv2), then further [fine-tune](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/train_v2.py) them on our own cancer pathology report data. 
+We fine-tune two pre-trained clinical models on squadv2: [pubmed_bert_squadv2](https://huggingface.co/franklu/pubmed_bert_squadv2) and [bluebert_pubmed_mimic_squadv2](https://huggingface.co/trevorkwan/bluebert_pubmed_mimic_uncased_squadv2), then further [fine-tune](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/train_v2.py) them on our own cancer pathology report data. We fine-tune over 30 models to optimize hyperparameters, balancing model performance with overfitting.
 
 #### Quesiton Answering (QA) Evaluation and Inference
-
-Take the predictions to get optimal QA score based on Yes/No Mentions. Re-evaluate on optimal QA score threshold.
-f1-score, Precision, Recall
+We [evaluate](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/eval_v3.py) the trained QA models to extract their predictions. Taking the predictions, we compute the optimal QA score threshold and classify any prediction below this threshold as "No Mention". We [infer](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/inference_v2.py) model prediction performance on f1-score, Precision, and Recall metrics.
 
 #### Text Classification Training and Evaluation
 
