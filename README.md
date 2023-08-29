@@ -14,7 +14,7 @@ Step 2: Classify the extracted span of text into a class. (Text Classification)
 We [load and clean](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/load_and_clean_data.py) synoptic and non-synoptic report data, removing irrelevant text/labels and accounting for missing data. We do [EDA](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/EDA.py) on the cleaned data to look for data imbalance and abnormalities. Data cleaning and EDA are an iterative process as we redefine project goals with healthcare stakeholders.
 
 #### Question Answering (QA) Training
-We fine-tune two pre-trained clinical models on squadv2: [pubmed_bert_squadv2](https://huggingface.co/franklu/pubmed_bert_squadv2) and [bluebert_pubmed_mimic_squadv2]((https://huggingface.co/trevorkwan/bluebert_pubmed_mimic_uncased_squadv2), then further [fine-tune](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/train_v2.py) them on our own cancer pathology report data. 
+We fine-tune two pre-trained clinical models on squadv2: [pubmed_bert_squadv2](https://huggingface.co/franklu/pubmed_bert_squadv2) and [bluebert_pubmed_mimic_squadv2](https://huggingface.co/trevorkwan/bluebert_pubmed_mimic_uncased_squadv2), then further [fine-tune](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/train_v2.py) them on our own cancer pathology report data. 
 
 #### Quesiton Answering (QA) Evaluation and Inference
 
