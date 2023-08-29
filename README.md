@@ -26,3 +26,6 @@ We explore other classification methods with varying performances for project th
 
 #### Exploratory Methods for QA Optimization
 We explore methods to optimize QA model performance, including [downsampling](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/get_sub_11_and_downsampled.ipynb), removing metadata, and adding synoptic data.
+
+### Results
+Our pipeline classified non-synoptic reports with near-human-level accuracy (>90%) in multiple cancer fields of interest.
