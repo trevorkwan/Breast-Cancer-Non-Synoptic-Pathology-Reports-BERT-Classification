@@ -22,6 +22,7 @@ We [evaluate](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology
 #### Text Classification Training and Evaluation
 
 #### Other Classification Methods
+Other classification methods with varying performances were explored for thoroughness in the project, including [Simple Regex](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/regex_classification.ipynb), [Weighted Keywords](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/weighted_keyword_analysis.ipynb), and [Naive Bayes](https://github.com/trevorkwan/Breast-Cancer-Non-Synoptic-Pathology-Reports-BERT-Classification/blob/main/src/naive_bayes_classifier.ipynb).
 
 #### Exploratory Methods for Optimization (QA Downsampling, Removing Metadata, Adding Synoptic Data)
 
